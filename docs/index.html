@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/visibilidad.css">
+    <link rel="stylesheet" href="css/palabras.css">
+    <link rel="stylesheet" href="css/juego.css">
+    <title>Ahorcado</title>
+</head>
+
+<body>
+
+    <!--Seccion Inicio-->
+    <section id="seccionInicio">
+        <div class="contenedor">
+            <input type="submit" value="Iniciar Juego" id="btnIniciar">
+            <input type="button" value="Agregar nueva palabra" id="btnAgregarPalabras">
+        </div>
+    </section>
+    <!-- - - - - - - -->
+
+
+    <!--Seccion agregar palabra-->
+    <section id="secPalabras" class="secPalabrs">
+        <div class="divPalabras">
+            <h2>Ingrese una palabra</h2>
+            <input type="text" id="inputPalabraNueva" maxlength="8" autocomplete="off" onkeyup="cambiarMayusc(this);">
+            <p>Máx de 8 letras</p>
+            <div class=" botonesPalabras">
+                <input type="submit" id="btnGuardarPalabra" value="Guardar">
+                <input type="button" id="btnCancelar" value="Volver atrás">
+            </div>
+        </div>
+    </section>
+    <!-- - - - - - - -->
+
+
+    <!--Seccion del Juego-->
+    <section id="secNewGame" class="secNewGame">
+        <canvas id="canvas"></canvas>
+        <input type="text" id="inputLetra" maxlength="1" onkeyup="validar();">
+        <p id="p_palabra"></p>
+        <p id="p_LetrasErroneas"></p>
+        <div class="botonesJuego">
+            <input type="submit" value="Nuevo Juego" id="btnNuevoJuego">
+            <input type="button" value="Desistir" id="btnDesistir">
+        </div>
+    </section>
+    <!-- - - - - - - -->
+
+
+
+
+    <!--SCRIPTS-->
+
+    <!--alertas personalizadas-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- - - - - - -->
+    
+    <script src="js/botones.js"></script>
+    <script src="js/palabras.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/juego.js"></script>
+    <!---->
+</body>
+
+</html>

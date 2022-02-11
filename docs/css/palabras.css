@@ -1,0 +1,24 @@
+h2{
+    font-size: 3em;
+    margin-bottom: 10%;
+}
+
+#inputPalabraNueva{
+    width: 100%;
+    border: none;
+    height: 3em;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #fbe1d2;
+    outline: none;
+}
+
+
+.divPalabras p{
+    color: gray;
+}
+
+.botonesPalabras{
+    text-align: center;
+    margin: 10%;
+}
